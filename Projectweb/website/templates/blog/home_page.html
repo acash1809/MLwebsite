@@ -1,0 +1,51 @@
+
+
+
+<html>
+<body>
+<h1 > this is title</h1>
+
+<div class='intro'>
+	this website blah blah.......
+	<br>
+</div>
+<div class='algos'>
+<p> To see the performed algorithms click below-</p>
+<ul>
+	<li><a href="{% url 'regression' %}"><strong>Regression</strong></a></li>
+	<li><a href="{% url 'classification' %}"><strong>Classification</strong></a></li>
+	<li><a href="{% url 'clustering' %}"><strong>Clustering</strong></a></li>
+</ul>
+
+</div>
+<br>
+
+<hr>
+<div class='comments'>
+	<h3>Comments:-</h3>
+	{% for comment in comments %}
+		<p>hi
+			<strong>{{ comment.name }}</strong>
+			<small>{{ comment.date_added }}</small>
+			<br>
+			{{ comment.body }}
+		</p>
+
+	{% empty %}
+		<p>No comments yet!</p>
+	{% endfor %}
+</div>
+<hr>
+<h4>Comment here:-</h4>
+
+<form method="post" action=".">
+	{% csrf_token %}
+
+	{{form.as_p}}
+
+	<div class='field'>
+		<div class="control">
+			<button class="button">Submit</button>
+		</div>
+	</div>
+</form>

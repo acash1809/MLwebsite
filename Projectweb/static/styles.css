@@ -1,0 +1,109 @@
+
+.container{
+    position:absolute;
+    width: 100%;
+}
+
+.intro{
+    /* border: 2px solid blue; */
+    display: block;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    padding: 1rem;
+    color: darkred;
+    background-color: antiquewhite;
+}
+
+.algos{
+    background-color: lightcyan;
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+.header{
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    display: block; 
+}
+
+
+
+.link a{
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 12px;
+    width: 8rem;
+    border: 2px solid blue;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin-top: .7rem;
+}
+
+.link a:hover{
+    transition: .3s;
+    color: white;
+    background-color: blue;
+}
+
+.comments .header{
+    font-weight: bold;
+}
+.comments{
+    background-color: lightyellow;
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    /* border: 2px solid darkorange; */
+}
+
+.comment-name{
+    font-weight: bold;
+    display: inline;
+    font-size: 1rem;
+}
+
+.hr{
+    margin-bottom: 2rem;
+}
+.comment-date{
+    display: inline;
+    font-size: 1rem;
+}
+
+.comment-body{
+    margin-top: .5rem;
+    color: darkblue;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+}
+.add-comment{
+    background-color:aliceblue;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.add-comment .header{
+    font-weight: bold;
+}
+
+button{
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    color: white;
+    background-color: darkblue;
+}
+
+button:hover{
+    transition: .3s;
+    border: 2px solid black;
+    color: white;
+    background-color: purple;
+}
